@@ -14,3 +14,12 @@ headerMobileItem.forEach((item) => {
     headerMobile.classList.remove("site-header__mobile-key");
   };
 });
+
+const hero_title = document.querySelector(".hero__title");
+hero_title.innerHTML = `
+const <span>arrowF</span> = () => { <br />
+  const <span>message</span> = <p class="hero__string">"Assalomu alaykum. Trafalgar saytiga hush kelibsiz! "</p> ; <br />
+  return <span>message</span> ; <br />
+}; <br />
+console.log( <span>arrowF()</span> ) ;
+`;
