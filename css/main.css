@@ -210,7 +210,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 30px;
+  padding: 0 20px;
 }
 
 .site-header__mobile-item-link {
