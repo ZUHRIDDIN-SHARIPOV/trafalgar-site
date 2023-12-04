@@ -431,6 +431,9 @@ img {
   .hero__content-title {
     font-size: 37px;
   }
+  .hero__content {
+    font-size: 17px;
+  }
 }
 @media only screen and (max-width: 360px) {
   .hero__block {
