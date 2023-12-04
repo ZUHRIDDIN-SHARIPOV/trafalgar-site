@@ -1,6 +1,6 @@
 .site-header {
   padding-top: 56px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   position: fixed;
   top: 0;
   left: 0;
@@ -64,10 +64,10 @@
   background: $white;
 }
 .site-header__mobile-list {
-  margin-top: 50px;
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
-  row-gap: 55px;
+  row-gap: 60px;
 }
 .site-header__mobile-item {
   display: flex;
