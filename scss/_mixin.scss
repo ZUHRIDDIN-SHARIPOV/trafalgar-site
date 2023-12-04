@@ -1,8 +1,34 @@
 @mixin site-header__item-style {
   font-family: $main-font;
-  font-size: 18px;
   font-weight: 400;
+  font-size: 18px;
   line-height: normal;
   opacity: 0.5;
   color: $dark-blue;
+}
+@mixin title {
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: $black;
+}
+@mixin text {
+  font-family: $main-font;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 32px;
+  color: $grey;
+}
+@mixin btn {
+  width: 200px;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 15.6px 39.8px;
+  border: 1.4px solid $blue;
+  border-radius: 55px;
+  flex-shrink: 0;
+  background: $white;
+  color: $blue;
 }
