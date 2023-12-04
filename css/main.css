@@ -428,6 +428,9 @@ img {
   }
 }
 @media only screen and (max-width: 400px) {
+  .hero__block {
+    row-gap: 30px;
+  }
   .hero__content-title {
     font-size: 37px;
   }
