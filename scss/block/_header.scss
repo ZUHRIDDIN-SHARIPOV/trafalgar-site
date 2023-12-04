@@ -26,7 +26,6 @@
 .site-header__item-link {
   @include site-header__item-style;
   &:active {
-    // font-weight: 700;
     opacity: 1;
     transition: 0.3s;
   }
