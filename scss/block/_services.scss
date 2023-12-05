@@ -1,0 +1,179 @@
+.services {
+  margin-bottom: 220px;
+}
+.services__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services__content {
+  max-width: 968px;
+  margin: 0 auto;
+  text-align: center;
+}
+.services__content-title {
+  @include title;
+  font-size: 36px;
+}
+.services__content-line {
+  width: 56px;
+  height: 2px;
+  margin: 26px auto 33px auto;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: $black;
+}
+.services__content-text {
+  @include text;
+  font-size: 18px;
+  line-height: 30px;
+}
+.services__list {
+  margin: 80px 0 72px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 37px 35px;
+}
+.services__item {
+  max-width: 350px;
+  border-radius: 20px;
+  background: $white;
+  box-shadow: 10px 40px 50px 0px $services-item-box-shadow;
+  &:hover {
+    box-shadow: none;
+    background: $black;
+    transition: 0.3s;
+    .services__item-title {
+      color: $white;
+    }
+    .services__item-text {
+      color: $white;
+      opacity: 0.9;
+    }
+  }
+}
+.services__item:first-child {
+  padding: 54px 45px 46px 39px;
+  .services__item-title {
+    margin-top: 22.41px;
+  }
+  &::before {
+    content: "";
+    width: 91.978px;
+    height: 90px;
+    flex-shrink: 0;
+    background-image: url("../../images/search-icon.svg");
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+}
+.services__item:nth-child(2) {
+  padding: 62px 52px 47px 37px;
+  .services__item-title {
+    margin-top: 19.41px;
+  }
+  &::before {
+    content: "";
+    width: 61.857px;
+    height: 85px;
+    flex-shrink: 0;
+    background-image: url("../../images/pharmacy-icon.svg");
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+}
+.services__item:nth-child(3) {
+  padding: 47px 50px 47px 39px;
+  .services__item-title {
+    margin-top: 24.41px;
+  }
+  &::before {
+    content: "";
+    width: 67.292px;
+    height: 95px;
+    flex-shrink: 0;
+    background-image: url("../../images/consultation-icon.svg");
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+}
+.services__item:nth-child(4) {
+  padding: 46px 50px 47px 38px;
+  .services__item-title {
+    margin-top: 25.41px;
+  }
+  &::before {
+    content: "";
+    width: 67.075px;
+    height: 95px;
+    flex-shrink: 0;
+    background-image: url("../../images/details-icon.svg");
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+}
+.services__item:nth-child(5) {
+  padding: 59px 45px 46px 39px;
+  .services__item-title {
+    margin-top: 36.25px;
+  }
+  &::before {
+    content: "";
+    width: 80px;
+    height: 71.155px;
+    flex-shrink: 0;
+    background-image: url("../../images/emergency-care-icon.svg");
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+}
+.services__item:last-child {
+  padding: 52px 50px 75px 39px;
+  .services__item-title {
+    margin-top: 19.41px;
+  }
+  &::before {
+    content: "";
+    width: 69.422px;
+    height: 95px;
+    flex-shrink: 0;
+    background-image: url("../../images/tracking-icon.svg");
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+}
+.services__item-title {
+  @include title;
+  font-size: 24px;
+  margin-bottom: 1px;
+}
+.services__item-text {
+  @include text;
+  font-size: 16px;
+  line-height: 28px;
+}
+.services__btn {
+  @include btn;
+  text-align: center;
+  &:hover {
+    border-color: transparent;
+    background: $blue;
+    color: $white;
+    transition: 0.3s;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .services__content-title {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .services__content-title {
+    font-size: 27px;
+  }
+  .services__item-title {
+    font-size: 20px;
+  }
+}

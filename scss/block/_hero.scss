@@ -8,6 +8,17 @@
   column-gap: 109px;
   padding-top: 40px;
   padding-bottom: 192px;
+  &::before {
+    content: "";
+    width: 131.581px;
+    height: 115px;
+    flex-shrink: 0;
+    background-image: url("../../images/element.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 186px;
+    left: 0;
+  }
 }
 .hero__content {
   max-width: 445px;
@@ -42,6 +53,9 @@
 @media only screen and (max-width: 1255px) {
   .hero__block {
     column-gap: 70px;
+    &::before {
+      display: none;
+    }
   }
   .hero__img {
     max-width: 580px;

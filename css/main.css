@@ -278,6 +278,18 @@ img {
   padding-top: 40px;
   padding-bottom: 192px;
 }
+.hero__block::before {
+  content: "";
+  width: 131.581px;
+  height: 115px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-image: url("../../images/element.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 186px;
+  left: 0;
+}
 
 .hero__content {
   max-width: 445px;
@@ -343,6 +355,9 @@ img {
     -webkit-column-gap: 70px;
        -moz-column-gap: 70px;
             column-gap: 70px;
+  }
+  .hero__block::before {
+    display: none;
   }
   .hero__img {
     max-width: 580px;
@@ -448,5 +463,248 @@ img {
   .hero__content-text {
     font-size: 19px;
     line-height: 34px;
+  }
+}
+.services {
+  margin-bottom: 220px;
+}
+
+.services__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services__content {
+  max-width: 968px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services__content-title {
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #000;
+  font-size: 36px;
+}
+
+.services__content-line {
+  width: 56px;
+  height: 2px;
+  margin: 26px auto 33px auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 5px;
+  background: #000;
+}
+
+.services__content-text {
+  font-family: "Mulish";
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 32px;
+  color: #7d7987;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.services__list {
+  margin: 80px 0 72px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 37px 35px;
+}
+
+.services__item {
+  max-width: 350px;
+  border-radius: 20px;
+  background: #fff;
+  -webkit-box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+          box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+}
+.services__item:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.services__item:hover .services__item-title {
+  color: #fff;
+}
+.services__item:hover .services__item-text {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.services__item:first-child {
+  padding: 54px 45px 46px 39px;
+}
+.services__item:first-child .services__item-title {
+  margin-top: 22.41px;
+}
+.services__item:first-child::before {
+  content: "";
+  width: 91.978px;
+  height: 90px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-image: url("../../images/search-icon.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.services__item:nth-child(2) {
+  padding: 62px 52px 47px 37px;
+}
+.services__item:nth-child(2) .services__item-title {
+  margin-top: 19.41px;
+}
+.services__item:nth-child(2)::before {
+  content: "";
+  width: 61.857px;
+  height: 85px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-image: url("../../images/pharmacy-icon.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.services__item:nth-child(3) {
+  padding: 47px 50px 47px 39px;
+}
+.services__item:nth-child(3) .services__item-title {
+  margin-top: 24.41px;
+}
+.services__item:nth-child(3)::before {
+  content: "";
+  width: 67.292px;
+  height: 95px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-image: url("../../images/consultation-icon.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.services__item:nth-child(4) {
+  padding: 46px 50px 47px 38px;
+}
+.services__item:nth-child(4) .services__item-title {
+  margin-top: 25.41px;
+}
+.services__item:nth-child(4)::before {
+  content: "";
+  width: 67.075px;
+  height: 95px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-image: url("../../images/details-icon.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.services__item:nth-child(5) {
+  padding: 59px 45px 46px 39px;
+}
+.services__item:nth-child(5) .services__item-title {
+  margin-top: 36.25px;
+}
+.services__item:nth-child(5)::before {
+  content: "";
+  width: 80px;
+  height: 71.155px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-image: url("../../images/emergency-care-icon.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.services__item:last-child {
+  padding: 52px 50px 75px 39px;
+}
+.services__item:last-child .services__item-title {
+  margin-top: 19.41px;
+}
+.services__item:last-child::before {
+  content: "";
+  width: 69.422px;
+  height: 95px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-image: url("../../images/tracking-icon.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.services__item-title {
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #000;
+  font-size: 24px;
+  margin-bottom: 1px;
+}
+
+.services__item-text {
+  font-family: "Mulish";
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 32px;
+  color: #7d7987;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.services__btn {
+  width: 200px;
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 18px;
+  padding: 15.6px 39.8px;
+  border: 1.4px solid #458ff6;
+  border-radius: 55px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #fff;
+  color: #458ff6;
+  text-align: center;
+}
+.services__btn:hover {
+  border-color: transparent;
+  background: #458ff6;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 400px) {
+  .services__content-title {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .services__content-title {
+    font-size: 27px;
+  }
+  .services__item-title {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=main.css.map */
