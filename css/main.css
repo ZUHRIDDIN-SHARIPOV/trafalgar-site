@@ -738,6 +738,9 @@ img {
   }
 }
 @media only screen and (max-width: 400px) {
+  .services {
+    margin-bottom: 70px;
+  }
   .services__content-title {
     font-size: 30px;
   }
@@ -932,6 +935,9 @@ img {
   }
 }
 @media only screen and (max-width: 400px) {
+  .providers {
+    margin-bottom: 70px;
+  }
   .providers__block {
     row-gap: 30px;
   }
