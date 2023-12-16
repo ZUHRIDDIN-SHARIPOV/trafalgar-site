@@ -1,0 +1,105 @@
+.site-footer {
+  background: linear-gradient(183deg, $light-blue -8.57%, $blue 82.96%);
+  position: relative;
+}
+.site-footer__block {
+  padding: 109px 0;
+}
+.site-footer__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 70px 111px;
+  margin-bottom: 55px;
+  &::before {
+    content: "";
+    width: 131.581px;
+    height: 115px;
+    flex-shrink: 0;
+    background-image: url("../../images/footer-element.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+  }
+  &::after {
+    content: "";
+    width: 131.581px;
+    height: 115px;
+    flex-shrink: 0;
+    z-index: -1;
+    background-image: url("../../images/services-element.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -72px;
+    right: 91.42px;
+    display: inline-block;
+  }
+}
+.site-footer__item:first-child {
+  max-width: 391px;
+  .site-footer__item-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .site-footer__item-title::before {
+    content: "T";
+    @include title;
+    font-size: 26px;
+    line-height: normal;
+    margin-right: 12px;
+    padding: 5px 11px 4px 13px;
+    border-radius: 50%;
+    vertical-align: middle;
+    background: $white;
+    color: $blue;
+  }
+  .site-footer__item-text {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
+.site-footer__item-title {
+  @include title;
+  font-size: 20px;
+  line-height: normal;
+  color: $white;
+  margin-bottom: 22px;
+}
+.site-footer__item-text,
+.site-footer__item-link {
+  @include text;
+  font-size: 18px;
+  line-height: normal;
+  color: $white;
+  margin-bottom: 11px;
+  display: block;
+}
+
+@media only screen and (max-width: 400px) {
+  .site-footer__block {
+    padding: 50px 0;
+  }
+  .site-footer__list {
+    gap: 50px;
+  }
+  .site-footer__list::before,
+  .site-footer__list::after {
+    display: none;
+  }
+  .site-footer__item:first-child {
+    .site-footer__item-title {
+      margin-bottom: 40px;
+    }
+  }
+}
+@media only screen and (max-width: 360px) {
+  .site-footer__block {
+    padding: 40px 0;
+  }
+  .site-footer__list {
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+}
